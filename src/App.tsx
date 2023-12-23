@@ -2,14 +2,19 @@ import { useEffect } from "react";
 import RouterCompontent from "./Components/Router";
 import { useAppDispatch } from "./store";
 import { loginHandler, logoutHandler } from "./store/reducers/login";
-import { toggleLang } from "./utils/toggleLang";
+import { useLocalization } from "./Hooks/useLocalization";
 
 function App() {
   const dispatch = useAppDispatch();
+  const { language } = useLocalization();
+
   useEffect(() => {
-    const lang = localStorage?.getItem("lang") || "en";
     const user = localStorage.getItem("userInfo");
-    toggleLang(lang, dispatch);
+    if (language === "ar") {
+      document.getElementsByTagName("html")[0].setAttribute("lang", "ar");
+    } else {
+      document.getElementsByTagName("html")[0].setAttribute("lang", "en");
+    }
     if (user) {
       const userData = JSON.parse(user);
       dispatch(
@@ -20,7 +25,7 @@ function App() {
     } else {
       dispatch(logoutHandler());
     }
-  }, [dispatch]);
+  }, [dispatch, language]);
   return <RouterCompontent />;
 }
 
