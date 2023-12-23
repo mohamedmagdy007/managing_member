@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://managing-member.vercel.app/](https://managing-member.vercel.app/)
+[https://managing-member.vercel.app/login](https://managing-member.vercel.app/login)
 
 <h2>🧐 Features</h2>
 
