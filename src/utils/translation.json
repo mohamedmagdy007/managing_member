@@ -1,0 +1,138 @@
+{
+  "login": {
+    "en": "login",
+    "ar": "تسجيل دخول"
+  },
+  "sign in": {
+    "en": "Sign in",
+    "ar": "تسجيل دخول"
+  },
+  "password": {
+    "en": "password",
+    "ar": "كلمة المرور"
+  },
+  "log out": {
+    "en": "log out",
+    "ar": "تسجيل خروج"
+  },
+  "id": {
+    "en": "Id",
+    "ar": "رقم معرف"
+  },
+  "user name": {
+    "en": "Name",
+    "ar": "اسم"
+  },
+  "email": {
+    "en": "Email",
+    "ar": "بريد إلكتروني"
+  },
+  "membership type": {
+    "en": "Membership type",
+    "ar": "نوع العضوية"
+  },
+  "id number": {
+    "en": "Id Number",
+    "ar": "رقم الهوية"
+  },
+  "membership start date": {
+    "en": "Membership start date",
+    "ar": "تاريخ بدء العضوية"
+  },
+  "phone number": {
+    "en": "Phone number",
+    "ar": "رقم التليفون"
+  },
+  "date of birth": {
+    "en": "Date of birth",
+    "ar": "تاريخ الميلاد"
+  },
+  "all members": {
+    "en": "All Members",
+    "ar": "جميع الأعضاء"
+  },
+  "create member": {
+    "en": "Create member",
+    "ar": "إنشاء عضو"
+  },
+  "update member": {
+    "en": "Update member",
+    "ar": "عضو التحديث"
+  },
+  "delete member": {
+    "en": "Delete member",
+    "ar": "حذف عضو"
+  },
+  "yes": {
+    "en": "Yes",
+    "ar": "نعم"
+  },
+  "no": {
+    "en": "No",
+    "ar": "لآ"
+  },
+  "back": {
+    "en": "Back",
+    "ar": "الى الخلف"
+  },
+  "view": {
+    "en": "view",
+    "ar": "مشاهدة"
+  },
+  "edit": {
+    "en": "Edit",
+    "ar": "تعديل"
+  },
+  "delete": {
+    "en": "Delete",
+    "ar": "حذف"
+  },
+  "contact number": {
+    "en": "Contact number",
+    "ar": "رقم الاتصال"
+  },
+  "gender": {
+    "en": "Gender",
+    "ar": "النوع"
+  },
+  "address": {
+    "en": "Address",
+    "ar": "العنوان"
+  },
+  "upload photo": {
+    "en": "Upload photo",
+    "ar": "رفع الصورة"
+  },
+  "update": {
+    "en": "Update",
+    "ar": "تحديث"
+  },
+  "create": {
+    "en": "create",
+    "ar": "انشاء"
+  },
+  "male": {
+    "en": "Male",
+    "ar": "ذكر"
+  },
+  "female": {
+    "en": "Female",
+    "ar": "أنثى"
+  },
+  "other": {
+    "en": "Other",
+    "ar": "اخرى"
+  },
+  "subscribe": {
+    "en": "subscribe",
+    "ar": "يشترك"
+  },
+  "not found members": {
+    "en": "Not found members",
+    "ar": "لم يتم العثور على أعضاء"
+  },
+  "not found member": {
+    "en": "Not found member",
+    "ar": "لم يتم العثور على العضو"
+  }
+}

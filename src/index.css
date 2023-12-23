@@ -1,0 +1,17 @@
+/* @tailwind components; */
+@tailwind base;
+@tailwind utilities;
+/* @import "react-toastify/dist/ReactToastify.css"; */
+body {
+  @apply bg-gray-100;
+}
+body:lang(ar) > * {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+@supports (text-wrap: balance) {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
