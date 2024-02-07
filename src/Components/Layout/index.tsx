@@ -2,6 +2,8 @@ import { ReactNode } from "react";
 import AuthLayout from "./AuthLayout";
 import ProtectedLayout from "./ProtectedLayout";
 import { useLocation } from "react-router-dom";
+import ValidateRoute from "../ValidateRoute";
+import CheckAuthRoute from "../CheckAuthRoute";
 
 const formsUrls: string[] = ["/login"];
 
@@ -10,9 +12,13 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       {formsUrls.includes(pathname) ? (
-        <AuthLayout>{children}</AuthLayout>
+        <CheckAuthRoute>
+          <AuthLayout>{children}</AuthLayout>
+        </CheckAuthRoute>
       ) : (
-        <ProtectedLayout>{children}</ProtectedLayout>
+        <ValidateRoute>
+          <ProtectedLayout>{children}</ProtectedLayout>
+        </ValidateRoute>
       )}
     </>
   );

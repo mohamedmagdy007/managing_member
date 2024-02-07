@@ -1,8 +1,7 @@
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import ValidateRoute from "../ValidateRoute";
 import Layout from "../Layout";
-import CheckAuthRoute from "../CheckAuthRoute";
+
 import Loading from "../Loading";
 const Login = lazy(() => import("../../Pages/auth/Login"));
 const Members = lazy(() => import("../../Pages/members"));
@@ -44,19 +43,11 @@ const RouterCompontent = () => {
       <Suspense fallback={<Loading />}>
         <Routes>
           {routes.map((route, ind) => (
-            <Route
-              key={ind}
-              path={route.route}
-              element={<ValidateRoute>{route.element}</ValidateRoute>}
-            />
+            <Route key={ind} path={route.route} element={route.element} />
           ))}
 
           {authRoutes.map((route, ind) => (
-            <Route
-              path={route.route}
-              element={<CheckAuthRoute>{route.element}</CheckAuthRoute>}
-              key={ind}
-            />
+            <Route path={route.route} element={route.element} key={ind} />
           ))}
           <Route path="*" element={<div>"This page not founded!"</div>} />
         </Routes>
